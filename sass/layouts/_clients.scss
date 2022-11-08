@@ -12,17 +12,19 @@
 .clients-title {
   margin-bottom: 30px;
 
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 50px;
-  }
-
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 
   color: var(--top-color);
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .clients-list {
@@ -33,7 +35,8 @@
 }
 
 .clients-link {
-  width: 170px;
+  // width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -47,5 +50,13 @@
   &:focus {
     border-color: var(--hover-color);
     fill: var(--hover-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 225px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 }
