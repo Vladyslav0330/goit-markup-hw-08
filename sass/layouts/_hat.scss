@@ -1,0 +1,87 @@
+.hat {
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  align-items: center;
+
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-color: var(--background-hat-footer);
+  background-image: var(--hero-gradient), url(../imeges/hero-mobile.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  flex-grow: 1;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: var(--hero-gradient), url(../imeges/hero-mob-2x.jpeg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: var(--hero-gradient), url(../imeges/hero-tablet.jpeg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: var(--hero-gradient), url(../imeges/hero-tab-2x.jpeg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: var(--hero-gradient), url(../imeges/hero-bg.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: var(--hero-gradient), url(../imeges/hero-bg-2x.jpeg);
+    }
+  }
+}
+
+.hat__title {
+  width: 360px;
+  display: block;
+  margin: 0 auto;
+
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+.hat__btn {
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 30px;
+  width: 216px;
+  height: 50px;
+  display: block;
+
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  cursor: pointer;
+  background-color: var(--hover-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  transition: background-color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: var(--hat-btn-focus);
+  }
+}

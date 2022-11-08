@@ -1,0 +1,150 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--background-hat-footer);
+}
+
+.footer-blok {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.footer-tablet {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+    gap: 165px;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.footer-container {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    // padding-left: 215px;
+    margin: 0 auto;
+  }
+}
+
+.footer-logo {
+  // display: inline-block;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--hover-color);
+  &:hover,
+  &:focus {
+    color: var(--hover-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+  }
+}
+
+.footer-logo-studio {
+  color: var(--white-color);
+}
+
+.footer-address {
+  display: block;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+    width: 230px;
+  }
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-map {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  transition: color 250ms linear;
+  &:hover,
+  &:focus {
+    color: var(--hover-color);
+  }
+}
+
+.footer-mail,
+.footer-tel {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  transition: color 250ms linear;
+  &:hover,
+  &:focus {
+    color: var(--hover-color);
+  }
+}
+
+.footer-soc-blok {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
+}
+
+.footer-soc-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: start;
+  }
+}
+
+.footer-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--white-color);
+  transition: background-color 250ms linear;
+  &:hover,
+  &:focus {
+    background-color: var(--hover-color);
+  }
+}
